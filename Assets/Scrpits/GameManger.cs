@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManger : MonoBehaviour
 {
-    [SerializeField] private GameObject[] chips;
+    [SerializeField] private GameObject chips;
     [SerializeField] private Transform Row1;
     private int time = 1;
 
@@ -15,9 +15,11 @@ public class GameManger : MonoBehaviour
 
     private IEnumerator spawnChips()
     {
-        //Instantiate(chips[Random.Range(0, chips.Count)], Row1.transform.position, Quaternion.Euler(90f, 0f, 0f));
-        yield return new WaitForSeconds(time);
-        StartCoroutine(spawnChips());
+        for (int i = 0; i < 6; i++)
+        {
+            Instantiate(chips, Row1.transform.position, Quaternion.Euler(90f, 0f, 0f));
+            yield return new WaitForSeconds(time);
+        }
     }
 
 }
