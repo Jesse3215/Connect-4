@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3043056220286570753}
   - component: {fileID: 7943282312590375043}
   - component: {fileID: 7896010609527442294}
+  - component: {fileID: 4357400145177031611}
   m_Layer: 0
   m_Name: Red Chip
   m_TagString: Untagged
@@ -98,7 +99,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601233668561943495}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 690aaba9eca4fc04fa348dbc9b6afc47, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -139,3 +140,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4357400145177031611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601233668561943495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e016efa8bb30fc409a370674ec6681b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Chip

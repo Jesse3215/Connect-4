@@ -6,7 +6,7 @@ public class GameManger : MonoBehaviour
 {
     [SerializeField] private GameObject chips;
     [SerializeField] private Transform Row1;
-    private int time = 1;
+    private int time = 2;
 
     void Start()
     {
