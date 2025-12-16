@@ -11,9 +11,9 @@ public class Chip : MonoBehaviour
 
     void Update()
     {
-        if(rb.linearVelocity.magnitude < 0.01)
-        {
-            rb.isKinematic = true;
-        }
+        //if(rb.linearVelocity.magnitude < 0.01)
+        //{
+        //    rb.isKinematic = true;
+        //}
     }
 }
