@@ -683,6 +683,14 @@ MonoBehaviour:
   - {fileID: 1797926414}
   - {fileID: 1842801645}
   - {fileID: 1078831259}
+  buttonsVisueel:
+  - {fileID: 1839429031}
+  - {fileID: 2076609476}
+  - {fileID: 2128611392}
+  - {fileID: 1929609630}
+  - {fileID: 1797926409}
+  - {fileID: 1842801640}
+  - {fileID: 1078831254}
   playerText: {fileID: 566474739}
   isAiTurn: 0
 --- !u!4 &646020573

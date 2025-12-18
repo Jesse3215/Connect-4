@@ -12,26 +12,35 @@ public class Button : MonoBehaviour
     private float cooldownDuration = 1f;
     private bool isOnCooldown = false;
 
-
     public void OnClick()
     {
         if (isOnCooldown) return;
 
         if(!gameManager.isAiTurn)
         {
-            GameObject chipToSpawn = chips[0];
-            Transform targetRow = rows[rowIndex];
-            Instantiate(chipToSpawn, targetRow.transform.position, targetRow.transform.rotation);
+            PlayersTurn();
         }
 
         if (gameManager.isAiTurn)
         {
-            GameObject chipToSpawn = chips[1];
-            Transform targetRow = rows[rowIndex];
-            Instantiate(chipToSpawn, targetRow.transform.position, targetRow.transform.rotation);
+            AiTurn();
         }
 
         StartCooldown();
+    }
+
+    private void PlayersTurn()
+    {
+        GameObject chipToSpawn = chips[0];
+        Transform targetRow = rows[rowIndex];
+        Instantiate(chipToSpawn, targetRow.transform.position, targetRow.transform.rotation);
+    }
+
+    private void AiTurn()
+    {
+        GameObject chipToSpawn = chips[1];
+        Transform targetRow = rows[rowIndex];
+        Instantiate(chipToSpawn, targetRow.transform.position, targetRow.transform.rotation);
     }
 
     private void StartCooldown()

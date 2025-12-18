@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] Button[] buttons;
-    [SerializeField] TextMeshProUGUI playerText;
+    [SerializeField] private Button[] buttons;
+    [SerializeField] private TextMeshProUGUI playerText;
 
     private Coroutine ai;
-    private float cooldownDuration = 1f;
+    private float cooldownDuration = 2f;
 
     public bool isAiTurn = false;
 
@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     {
         if(!isAiTurn)
         {
-            playerText.text = "Player 1";
+            playerText.text = "Your Turn";
             playerText.color = Color.red;
         }
         
