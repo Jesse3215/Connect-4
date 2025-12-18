@@ -543,7 +543,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 28.3, y: -39.2}
+  m_AnchoredPosition: {x: 28.3, y: -39.19995}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566474739
@@ -675,8 +675,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5537e8ffc8850846978dccb72c0652a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  buttons:
+  - {fileID: 1839429036}
+  - {fileID: 2076609481}
+  - {fileID: 2128611397}
+  - {fileID: 1929609635}
+  - {fileID: 1797926414}
+  - {fileID: 1842801645}
+  - {fileID: 1078831259}
   playerText: {fileID: 566474739}
-  currentPlayer: 1
+  isAiTurn: 0
 --- !u!4 &646020573
 Transform:
   m_ObjectHideFlags: 0

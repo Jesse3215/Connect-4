@@ -17,26 +17,14 @@ public class Button : MonoBehaviour
     {
         if (isOnCooldown) return;
 
-        if (rowIndex < 0 || rowIndex >= rows.Length)
-        {
-            Debug.LogError("Row index out of range: " + rowIndex);
-            return;
-        }
-
-        if (chips.Length == 0)
-        {
-            Debug.LogError("No chips assigned.");
-            return;
-        }
-
-        if(gameManager.currentPlayer == 1)
+        if(!gameManager.isAiTurn)
         {
             GameObject chipToSpawn = chips[0];
             Transform targetRow = rows[rowIndex];
             Instantiate(chipToSpawn, targetRow.transform.position, targetRow.transform.rotation);
         }
 
-        if (gameManager.currentPlayer == 2)
+        if (gameManager.isAiTurn)
         {
             GameObject chipToSpawn = chips[1];
             Transform targetRow = rows[rowIndex];
